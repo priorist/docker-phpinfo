@@ -1,2 +1,3 @@
-# docker-phpinfo
-Simply returns output of phpinfo().
+# Docker phpinfo
+
+Simply returns output of phpinfo() at port 80.

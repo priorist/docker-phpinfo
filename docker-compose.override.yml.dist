@@ -1,0 +1,19 @@
+version: "3.7"
+
+
+services:
+
+    phpinfo:
+        build:
+            context: .
+        volumes:
+            - type: bind
+              source: ./src
+              target: /var/www/html
+              consistency: delegated
+        restart: unless-stopped
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "1m"
+                max-file: "1"
